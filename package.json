@@ -22,7 +22,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "git-conventional-commits": "^2.1.2"
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
+    "eslint-config-universe": "^11.1.0",
+    "git-conventional-commits": "^2.1.2",
+    "prettier": "^2.7.1"
+  },
+  "eslintConfig": {
+    "extends": "universe/native"
   },
   "private": true
 }
