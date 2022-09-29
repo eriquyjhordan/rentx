@@ -8,6 +8,7 @@ import peopleSvg from '../../assets/People.svg';
 import speedSvg from '../../assets/Speed.svg';
 import strenghtSvg from '../../assets/Strenght.svg';
 import { Acessory } from '../../components/Acessory';
+import { ActionButton } from '../../components/ActionButton';
 import { BackButton } from '../../components/BackButton';
 import { ImageSlider } from '../../components/ImageSlider';
 import {
@@ -24,6 +25,7 @@ import {
   Price,
   About,
   Accessories,
+  Footer,
 } from './styles';
 
 export function CarDetails() {
@@ -66,6 +68,9 @@ export function CarDetails() {
           Maestranza de Sevilla. É um belíssimo carro para quem gosta de acelerar.
         </About>
       </Content>
+      <Footer>
+        <ActionButton title="Escolher período do aluguel" active onPress={() => { }} />
+      </Footer>
     </Container>
   );
 }
