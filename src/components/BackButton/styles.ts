@@ -11,5 +11,4 @@ export const Container = styled(BorderlessButton)``;
 export const Icon = styled(Feather)<BackButtonProps>`
   color: ${({ color, theme }) =>
     color === 'light' ? theme.colors.background_secondary : theme.colors.text};
-  padding: 24px;
 `;

@@ -10,7 +10,7 @@ interface Props extends BorderlessButtonProps {
 
 export function BackButton({ color, onPress, ...rest }: Props) {
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView>
       <Container {...rest} onPress={onPress}>
         <Icon name="chevron-left" size={24} color={color} />
       </Container>
