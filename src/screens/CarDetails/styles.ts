@@ -21,14 +21,16 @@ export const CarImages = styled.View`
   margin-top: ${getStatusBarHeight() + 32}px;
 `;
 
-export const Content = styled.View`
+export const Content = styled.ScrollView.attrs({
+  showsVerticalScrollIndicator: false,
+})`
   padding: 0 ${RFValue(24)}px;
-  margin-top: ${RFValue(35)}px;
 `;
 export const Details = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: ${RFValue(35)}px;
 `;
 export const Description = styled.View``;
 export const Brand = styled.Text`
@@ -74,7 +76,6 @@ export const About = styled.Text`
 `;
 
 export const Footer = styled.View`
-  flex: 1;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.background_primary};
   padding: ${RFValue(24)}px ${RFValue(24)}px ${getBottomSpace() + 24}px;
